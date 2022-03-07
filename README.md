@@ -144,7 +144,7 @@ ls -lh /opt/kali-build/images/*.iso
 echo "[i] Done"
 ```
 
-A few things we will be changing within the existing template, is the preseed.cfg file, and the selected packages.
+A few things we will be changing within the existing template. 
 
 #### Base Image and Live Build Tools
 
