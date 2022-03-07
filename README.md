@@ -10,15 +10,15 @@ A long time ago, Offensive Security put out an article named [The ISO of DOOM](h
 
 > The idea we had was to build an “unattended self-deploying” instance of Kali Linux that would install itself on a target machine along with a customized configuration requiring no user input whatsoever. On reboot after the installation completes, Kali would automagically connect back to the attacker using a reverse OpenVPN connection. The VPN setup would then allow the attacker to bridge the remote and local networks as well as have access to a full suite of penetration testing tools on the target network.
 
-Cool concept right? A ISO that you could fire and forget in a network that would allow the pentesting team to access the network with minimal involment from the System Administrator or Network Administration team. It would do this with an OpenVPN client, that would call back to the OpenVPN server that attacker/pentester controls. Closely resembling a reverse shell. The article was made in 2013 which is a little dated (Currently 2022), but luckly, Offensive Security has [another article](https://www.kali.org/docs/development/dojo-mastering-live-build/) [Wayback Mirror](https://web.archive.org/web/20211023233914/https://www.kali.org/docs/development/dojo-mastering-live-build/) that was "Updated" Jan 2022. This article turned out to be inaccurate, outdated, or just plain wrong.
+Cool concept right? A ISO that you could fire and forget in a network that would allow the pentesting team to access the network with minimal involment from the System Administrator or Network Administration team. It would do this with an OpenVPN client, that would call back to the OpenVPN server that attacker/pentester controls. Closely resembling a reverse shell. The article was made in 2013 which is a little dated (Currently 2022), but luckly, Offensive Security has [another article](https://www.kali.org/docs/development/dojo-mastering-live-build/) ([Wayback Mirror](https://web.archive.org/web/20211023233914/https://www.kali.org/docs/development/dojo-mastering-live-build/)) that was "Updated" Jan 2022. This article turned out to be inaccurate, outdated, or just plain wrong.
 
 ## 
 
 ## Setup
 
-For the purpose of portablility, this is all going to be one large file. Offsec does provide a template git that does make your ISO, at its core, a Kali Machine.
+For the purpose of portablility, this is all going to be one large script. This allows you to update the VM quickly, share to teams and create several versions depending on the needs of the client. 
 
- I started with [this barebones template]("https://gitlab.com/kalilinux/recipes/live-build-config-examples/-/raw/master/offsec-awae-live.sh") offsec had for their AWAE course.
+I started with [this barebones template]("https://gitlab.com/kalilinux/recipes/live-build-config-examples/-/raw/master/offsec-awae-live.sh") offsec had for their AWAE course.
 
 Running this script did compile are working unattented Kali install, but it did not have any auto start functionalilty. It was the only hope I had for this idea to work at all, as the articles above could not even get a working ISO to compile.
 
@@ -777,3 +777,5 @@ EOF
 ```
 
 Multi Line Text to Output. Useful for adding and moving configurations without having seperate files.
+
+
