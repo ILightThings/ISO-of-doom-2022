@@ -252,7 +252,7 @@ d-i passwd/user-password-crypted password $1$J3/7CXvA$eH2OFza/XFl6to7ar36rT1
 
 Unfortunatly, you can only make the root and inital user at this stage.
 
-More on [preseed.cfg](B.4. Contents of the preconfiguration file](https://www.debian.org/releases/etch/i386/apbs04.html.en) here.
+More on [preseed.cfg](https://www.debian.org/releases/etch/i386/apbs04.html.en) here.
 
 #### Partitioning
 
