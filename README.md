@@ -380,7 +380,7 @@ EOF
 
 Once your preseed.cfg is something you are comforable with, it will need to be stored in `kali-config/common/includes.installer/preseed.cfg`. This should be located in the barebones template downloaded in step 1. Alternatively, you can put this is a shell script using `cat << EOF > kali-config/common/includes.installer/preseed.cfg` similar to the bash tempate we downloaded.
 
-#### Build
+## Build
 
 Feel free to change the name. The tail end of the script that will actually build the ISO.
 
@@ -463,7 +463,7 @@ chmod +x kali-config/common/hooks/normal/01-start-ssh.hook.chroot
 
 ### Transfering of files and configs
 
-In my scenario, I needed to transfer an openVPN configuration that will be used to connect back to my openVPN server. If you need a quick way of setting up a vpn server and client config, use [this]([GitHub - angristan/openvpn-install: Set up your own OpenVPN server on Debian, Ubuntu, Fedora, CentOS or Arch Linux.](https://github.com/angristan/openvpn-install)). The only change I would advise you make is changing ``/etc/openvpn/server.conf`` to allow multiple connections using the same key/cert. As multiple computer will be using the file we are about to transfer over.
+In my scenario, I needed to transfer an openVPN configuration that will be used to connect back to my openVPN server. If you need a quick way of setting up a vpn server and client config, use [this](https://github.com/angristan/openvpn-install). The only change I would advise you make is changing ``/etc/openvpn/server.conf`` to allow multiple connections using the same key/cert. As multiple computer will be using the file we are about to transfer over.
 
 
 
@@ -747,9 +747,9 @@ Offensive Security.... You know what you did. I mostly did this out of spite. Fi
 
 
 
-If you have issues, feel free to reach out on twitter and I will see if I can help.
+If you have issues, feel free to reach out on [twitter](https://twitter.com/gray_sec) and I will see if I can help.
 
-@gray_sec
+
 
 
 
@@ -757,25 +757,4 @@ If you have issues, feel free to reach out on twitter and I will see if I can he
 
 
 
-## Knowledge, Terms, and commands
-
-```bash
-mkdir -p /path/to/folder
-```
-
-Make Folder and parent folders if they dont exist. If the folders do exists, no error is returned and the command contiunes.
-
-![](assets/2022-03-07-15-44-47-image.png)
-
-```bash
-cat <<EOF > newfile.txt
-some
-multi
-line
-text
-EOF
-```
-
-Multi Line Text to Output. Useful for adding and moving configurations without having seperate files.
-
-
+## 
